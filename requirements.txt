@@ -1,0 +1,4 @@
+# smart-store-branton
+# Initial P1. BI Python project
+# README.md
+# requirements.md

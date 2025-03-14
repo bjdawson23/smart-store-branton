@@ -23,7 +23,7 @@
 # If it gets messed up, we can delete .venv and recreate it at any time. 
 
 # Run the following command to create a virtual environment in the project root.
-### On Windows, Use PowerShell (not cmd) - don't include the #:
+### On Windows, Use PowerShell (not cmd) - don't include the BD add#:
 # py -m venv .venv
 
 ### On Mac/Linux, Use zsh or bash (or PowerShell) - don't include the #:

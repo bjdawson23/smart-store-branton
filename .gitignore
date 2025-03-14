@@ -10,7 +10,7 @@
 # Compiled Python files
 __pycache__/
 
-# macOS system files
+# macOS system files BD add
 .DS_Store
 
 # Jupyter Notebook checkpoint files

@@ -38,6 +38,20 @@ py -m datafun_venv_checker.venv_checker
 py scripts/data_prep.py
 ```
 
+### Git add all new files to source control.
+git add .
+
+### Git commit with a message (-m) in quotes telling what you did. 
+git commit -m "add starter files"
+
+### Git push the changes to the origin (the web address of your repo in GitHub) on branch main (the default branch we will use throughout the course.
+git push -u origin main
+
+### Update the README.md to record project commands and workflow
+git add .
+git commit -m "Update README with commands"
+git push
+
 -----
 
 ## Initial Package List for the requirements.txt file

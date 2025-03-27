@@ -89,3 +89,6 @@ py tests\test_data_scrubber.py
 # scripts/data_prep_products.py
 # scripts/data_prep_sales.py
 
+git add .
+git commit -m "Add updates to README.md and Data Scrubber scripts"
+git push -u origin main

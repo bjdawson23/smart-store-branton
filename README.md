@@ -68,3 +68,24 @@ git push
 - pyspark==4.0.0.dev1
 - pyspark[sql]
 - git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
+
+# Project 3 Data Scrubber Section Objectives and Scripts
+# Reusable Cleaning with a DataScrubber Class
+# scripts/data_scrubber.py
+# test data_scrubber with this test script: tests/test_data_scrubber.py - imports/test the DataScrubber methods
+# Data prep:  recommend having a script for each raw data file
+
+# Activate .venv
+# In Windows PowerShell terminal: 
+.\.venv\Scripts\activate
+# Run Test Script
+py tests\test_data_scrubber.py
+
+# Create or Edit Your Main Data Prep script(s)
+# In your main data preparation script (e.g., scripts\data-prep.py) - or scripts. There can be a LOT of work in cleaning, you might want to create and maintain one data_prep file for each of the raw tables, for example you might have either all in one:
+# scripts/data_prep.py 
+# Or several files:
+# scripts/data_prep_cutomers.py
+# scripts/data_prep_products.py
+# scripts/data_prep_sales.py
+

@@ -2819,3 +2819,35 @@ dtype: int64
 2025-03-26 10:51:52.457 | INFO     | __main__:main:295 - ==================================
 2025-03-26 10:51:52.457 | INFO     | __main__:main:296 - FINISHED prepare_products_data.py
 2025-03-26 10:51:52.457 | INFO     | __main__:main:297 - ==================================
+2025-03-29 10:57:46.041 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-03-29 10:57:46.042 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-03-29 10:57:46.047 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-03-29 10:57:46.047 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-03-29 11:28:27.318 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-03-29 11:28:27.319 | INFO     | __main__:main:115 - Starting data warehouse creation...
+2025-03-29 11:28:27.331 | INFO     | __main__:create_customer_table:48 - customer table created.
+2025-03-29 11:28:27.336 | INFO     | __main__:create_product_table:63 - product table created.
+2025-03-29 11:28:27.339 | INFO     | __main__:create_sale_table:84 - sale table created.
+2025-03-29 11:28:27.339 | INFO     | __main__:create_dw:103 - Data warehouse created successfully.
+2025-03-29 11:28:27.339 | INFO     | __main__:main:117 - Data warehouse creation complete.
+2025-03-29 12:12:23.263 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-03-29 12:12:23.264 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-03-29 12:12:23.265 | ERROR    | __main__:create_customer_table:52 - Error creating customer table: near ")": syntax error
+2025-03-29 12:12:23.266 | ERROR    | __main__:create_product_table:69 - Error creating product table: near "year_added": syntax error
+2025-03-29 12:12:23.280 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-03-29 12:12:23.280 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-03-29 12:12:23.281 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-03-29 12:23:57.986 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-03-29 12:23:57.987 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-03-29 12:23:58.002 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-03-29 12:23:58.003 | ERROR    | __main__:create_product_table:69 - Error creating product table: near "year_added": syntax error
+2025-03-29 12:23:58.009 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-03-29 12:23:58.010 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-03-29 12:23:58.010 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-03-29 12:26:37.370 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-03-29 12:26:37.371 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-03-29 12:26:37.386 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-03-29 12:26:37.392 | INFO     | __main__:create_product_table:67 - product table created.
+2025-03-29 12:26:37.398 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-03-29 12:26:37.398 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-03-29 12:26:37.399 | INFO     | __main__:main:123 - Data warehouse creation complete.

@@ -111,7 +111,7 @@ git add .
 git commit -m "Add updates to README.md and Data Scrubber scripts"
 git push -u origin main
 
-## Module 4 Execute the script to create the database and tables
+## Module 4 Execute the script to create the database and tables.  Goal: Use SQLite to define and create tables for your data warehouse. The script will set up the database schema based on your design
 
 py scripts/create_dw.py
 

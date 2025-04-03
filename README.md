@@ -23,6 +23,7 @@ py -m venv .venv
 ### Step 2C - Install Packages
 
 ```shell
+py -m pip install --upgrade pip setuptools wheel
 py -m pip install --upgrade -r requirements.txt
 ```
 
@@ -32,11 +33,14 @@ py -m pip install --upgrade -r requirements.txt
 py -m datafun_venv_checker.venv_checker
 ```
 
-### Step 2E - Run the initial project script
+### Step 2E - Run the initial project script to setup prepared data from project root
 
 ```shell
 py scripts/data_prep.py
 ```
+### Git to pull changes from Github Project repo
+
+git pull origin main
 
 ### Git add all new files to source control
 
@@ -115,6 +119,12 @@ git push -u origin main
 
 py scripts/create_dw.py
 
-## Finish the code to actually create tables using the initial columns To allow the script to be re-run while we are finalizing it, delete the new database if it exists before each run
+## Finish the code to actually create tables using the initial columns To allow the script to be re-run while we are finalizing it, delete the new database if it exists before each run.  Then run the below script to populate the data warehouse
+
+python3 scripts/etl_to_dw.py
+
+![alt text](image.png)
+
+
 
 

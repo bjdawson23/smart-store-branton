@@ -10,6 +10,7 @@ Each table creation is handled in a separate function for easier testing and err
 import sqlite3
 import sys
 import pathlib
+import pandas as pd
 
 # For local imports, temporarily add project root to Python sys.path
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -42,9 +43,9 @@ def create_customer_table(cursor: sqlite3.Cursor) -> None:
                 customer_id INTEGER PRIMARY KEY,
                 name TEXT NOT NULL,
                 region TEXT,
-                join_date TEXT  -- ISO 8601 format recommended for SQLite
+                join_date TEXT,
                 loyalty_points INTEGER DEFAULT 0,
-                prefered_contact_method TEXT CHECK(prefered_contact_method IN ('email', 'phone', 'sms'))
+                preferred_contact_method TEXT CHECK(preferred_contact_method IN ('Email', 'Phone', 'Text'))
             )
         """)
         logger.info("customer table created.")
@@ -60,8 +61,7 @@ def create_product_table(cursor: sqlite3.Cursor) -> None:
                 name TEXT NOT NULL,
                 category TEXT,
                 unit_price_usd REAL NOT NULL,
-                year_added INTEGER CHECK(year_added >= 2000),  -- Assuming products are added from year 2000 onwards
-                subcategory TEXT CHECK(subcategory IN ('electronics', 'furniture', 'clothing', 'food'))
+                year_added INTEGER CHECK(year_added >= 2000)  -- Assuming products are added from year 2000 onwards
             )
         """)
         logger.info("product table created.")
@@ -80,9 +80,9 @@ def create_sale_table(cursor: sqlite3.Cursor) -> None:
                 campaign_id INTEGER,
                 sale_date DATE,
                 quantity INTEGER NOT NULL,
-                sale_amount_usd INTEGER NOT NULL,
+                sale_amount_usd REAL NOT NULL,
                 discount_amount_usd INTEGER DEFAULT 0,
-                payment_method TEXT CHECK(payment_method IN ('credit_card', 'debit_card', 'cash', 'mobile_payment')),
+                payment_method TEXT CHECK(payment_method IN ('Credit_Card', 'Cash')),
                 FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
                 FOREIGN KEY (product_id) REFERENCES product(product_id)
             )
@@ -90,6 +90,28 @@ def create_sale_table(cursor: sqlite3.Cursor) -> None:
         logger.info("sale table created.")
     except sqlite3.Error as e:
         logger.error(f"Error creating sale table: {e}")
+
+def clean_payment_method(sales_df):
+    """Clean and validate payment methods in the sales dataframe."""
+    valid_methods = ['Credit_Card', 'Cash']
+    sales_df['payment_method'] = sales_df['payment_method'].fillna('Cash')
+    sales_df['payment_method'] = sales_df['payment_method'].str.strip().str.title()
+    sales_df['payment_method'] = sales_df['payment_method'].where(
+        sales_df['payment_method'].isin(valid_methods), 'Cash'
+    )
+
+def insert_sales(sales_df: pd.DataFrame, cursor: sqlite3.Cursor) -> None:
+    """Insert sales data into the sales table."""
+    # Normalize and validate payment_method values
+    valid_methods = ['Credit_Card', 'Cash']
+    sales_df['payment_method'] = sales_df['payment_method'].str.strip().str.title()
+    sales_df['payment_method'] = sales_df['payment_method'].where(
+        sales_df['payment_method'].isin(valid_methods), 'Cash'
+    )
+    sales_df['payment_method'] = sales_df['payment_method'].fillna('Cash')
+
+    # Insert data into the database
+    sales_df.to_sql("sale", cursor.connection, if_exists="append", index=False)
 
 def create_dw() -> None:
     """Create the data warehouse by creating customer, product, and sale tables."""

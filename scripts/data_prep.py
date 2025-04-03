@@ -65,19 +65,20 @@ def main() -> None:
     logger.info("========================")
 
     df_customers = read_raw_data("customers_data.csv")
+    logger.info(f"Columns in customers DataFrame: {df_customers.columns.tolist()}")
+    logger.info(f"Columns in DataFrame: {df_customers.columns.tolist()}")
 
     df_customers.columns = df_customers.columns.str.strip()  # Clean column names
     df_customers = df_customers.drop_duplicates()            # Remove duplicates
 
-    df_customers['Name'] = df_customers['Name'].str.strip()  # Trim whitespace from column values
-    df_customers = df_customers.dropna(subset=['CustomerID', 'Name'])  # Drop rows missing critical info
+    df_customers['name'] = df_customers['name'].str.strip()  # Trim whitespace from column values
+    df_customers = df_customers.dropna(subset=['customer_id', 'name'])  # Drop rows missing critical info
     
     scrubber_customers = DataScrubber(df_customers)
     scrubber_customers.check_data_consistency_before_cleaning()
     scrubber_customers.inspect_data()
     
     df_customers = scrubber_customers.handle_missing_data(fill_value="N/A")
-    df_customers = scrubber_customers.parse_dates_to_add_standard_datetime('JoinDate')
     scrubber_customers.check_data_consistency_after_cleaning()
 
     save_prepared_data(df_customers, "customers_data_prepared.csv")
@@ -87,11 +88,12 @@ def main() -> None:
     logger.info("========================")
 
     df_products = read_raw_data("products_data.csv")
+    logger.info(f"Columns in DataFrame: {df_products.columns.tolist()}")
 
     df_products.columns = df_products.columns.str.strip()  # Clean column names
     df_products = df_products.drop_duplicates()            # Remove duplicates
 
-    df_products['ProductName'] = df_products['ProductName'].str.strip()  # Trim whitespace from column values
+    df_products['name'] = df_products['name'].str.strip()  # Trim whitespace from column values
     
     scrubber_products = DataScrubber(df_products)
     scrubber_products.check_data_consistency_before_cleaning()
@@ -105,12 +107,13 @@ def main() -> None:
     logger.info("========================")
 
     df_sales = read_raw_data("sales_data.csv")
+    logger.info(f"Columns in DataFrame: {df_sales.columns.tolist()}")
 
     df_sales.columns = df_sales.columns.str.strip()  # Clean column names
     df_sales = df_sales.drop_duplicates()            # Remove duplicates
 
-    df_sales['SaleDate'] = pd.to_datetime(df_sales['SaleDate'], errors='coerce')  # Ensure sale_date is datetime
-    df_sales = df_sales.dropna(subset=['TransactionID', 'SaleDate'])  # Drop rows missing key information
+    df_sales['sale_date'] = pd.to_datetime(df_sales['sale_date'], errors='coerce')  # Ensure sale_date is datetime
+    df_sales = df_sales.dropna(subset=['sale_id', 'sale_date'])  # Drop rows missing key information
     
     scrubber_sales = DataScrubber(df_sales)
     scrubber_sales.check_data_consistency_before_cleaning()

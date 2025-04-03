@@ -2851,3 +2851,516 @@ dtype: int64
 2025-03-29 12:26:37.398 | INFO     | __main__:create_sale_table:90 - sale table created.
 2025-03-29 12:26:37.398 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
 2025-03-29 12:26:37.399 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 14:35:15.381 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 14:35:15.382 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 14:35:15.388 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 14:35:15.393 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 14:35:15.397 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 14:35:15.398 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 14:35:15.398 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 14:40:48.708 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 14:40:48.709 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 14:40:48.721 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 14:40:48.725 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 14:40:48.729 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 14:40:48.730 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 14:40:48.730 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 14:42:24.662 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 14:42:24.663 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 14:42:24.677 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 14:42:24.682 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 14:42:24.686 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 14:42:24.687 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 14:42:24.687 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 15:43:05.606 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 15:43:05.607 | INFO     | __main__:main:162 - ==================================
+2025-04-02 15:43:05.607 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-04-02 15:43:05.607 | INFO     | __main__:main:164 - ==================================
+2025-04-02 15:43:05.607 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-branton
+2025-04-02 15:43:05.608 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-branton\data\raw
+2025-04-02 15:43:05.608 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-branton\data\prepared
+2025-04-02 15:43:05.608 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-branton\scripts
+2025-04-02 15:43:05.608 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-04-02 15:43:05.608 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-branton\data\raw\customers_data.csv
+2025-04-02 15:43:05.611 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-04-02 15:43:05.611 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-04-02 15:43:05.611 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-04-02 15:43:05.611 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-04-02 15:43:05.612 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-04-02 15:43:05.613 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-04-02 15:43:05.613 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-04-02 15:43:05.613 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 2
+2025-04-02 15:43:05.615 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-04-02 15:43:05.615 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-04-02 15:43:05.616 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-04-02 15:43:05.616 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-04-02 15:43:05.616 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-04-02 15:43:05.616 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-04-02 15:43:05.619 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 15:43:05.620 | INFO     | __main__:main:202 - ==================================
+2025-04-02 15:43:05.620 | INFO     | __main__:main:203 - FINISHED prepare_customers_data.py
+2025-04-02 15:43:05.620 | INFO     | __main__:main:204 - ==================================
+2025-04-02 15:43:37.340 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 15:43:37.340 | INFO     | __main__:main:162 - ==================================
+2025-04-02 15:43:37.340 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-04-02 15:43:37.341 | INFO     | __main__:main:164 - ==================================
+2025-04-02 15:43:37.341 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-branton
+2025-04-02 15:43:37.341 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-branton\data\raw
+2025-04-02 15:43:37.341 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-branton\data\prepared
+2025-04-02 15:43:37.341 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-branton\scripts
+2025-04-02 15:43:37.342 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-04-02 15:43:37.342 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-branton\data\raw\customers_data.csv
+2025-04-02 15:43:37.344 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-04-02 15:43:37.344 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-04-02 15:43:37.344 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-04-02 15:43:37.345 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-04-02 15:43:37.347 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-04-02 15:43:37.347 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-04-02 15:43:37.347 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-04-02 15:43:37.348 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 2
+2025-04-02 15:43:37.350 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-04-02 15:43:37.350 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-04-02 15:43:37.350 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-04-02 15:43:37.351 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-04-02 15:43:37.351 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-04-02 15:43:37.351 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-04-02 15:43:37.354 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 15:43:37.354 | INFO     | __main__:main:202 - ==================================
+2025-04-02 15:43:37.354 | INFO     | __main__:main:203 - FINISHED prepare_customers_data.py
+2025-04-02 15:43:37.355 | INFO     | __main__:main:204 - ==================================
+2025-04-02 15:43:42.465 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 15:43:42.465 | INFO     | __main__:main:162 - ==================================
+2025-04-02 15:43:42.466 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-04-02 15:43:42.466 | INFO     | __main__:main:164 - ==================================
+2025-04-02 15:43:42.466 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-branton
+2025-04-02 15:43:42.466 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-branton\data\raw
+2025-04-02 15:43:42.466 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-branton\data\prepared
+2025-04-02 15:43:42.466 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-branton\scripts
+2025-04-02 15:43:42.467 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-04-02 15:43:42.467 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-branton\data\raw\customers_data.csv
+2025-04-02 15:43:42.469 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-04-02 15:43:42.469 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-04-02 15:43:42.469 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-04-02 15:43:42.470 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-04-02 15:43:42.471 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-04-02 15:43:42.472 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-04-02 15:43:42.472 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-04-02 15:43:42.473 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 2
+2025-04-02 15:43:42.475 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-04-02 15:43:42.475 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-04-02 15:43:42.476 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-04-02 15:43:42.476 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-04-02 15:43:42.476 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-04-02 15:43:42.476 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-04-02 15:43:42.479 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 15:43:42.479 | INFO     | __main__:main:202 - ==================================
+2025-04-02 15:43:42.479 | INFO     | __main__:main:203 - FINISHED prepare_customers_data.py
+2025-04-02 15:43:42.479 | INFO     | __main__:main:204 - ==================================
+2025-04-02 15:44:14.268 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 15:44:14.269 | INFO     | __main__:main:59 - ======================
+2025-04-02 15:44:14.270 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 15:44:14.270 | INFO     | __main__:main:61 - ======================
+2025-04-02 15:44:14.270 | INFO     | __main__:main:63 - ========================
+2025-04-02 15:44:14.270 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 15:44:14.271 | INFO     | __main__:main:65 - ========================
+2025-04-02 15:44:14.284 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 15:44:14.284 | INFO     | __main__:main:85 - ========================
+2025-04-02 15:44:14.284 | INFO     | __main__:main:86 - Starting PRODUCTS prep
+2025-04-02 15:44:14.285 | INFO     | __main__:main:87 - ========================
+2025-04-02 15:44:14.296 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 15:44:14.296 | INFO     | __main__:main:103 - ========================
+2025-04-02 15:44:14.297 | INFO     | __main__:main:104 - Starting SALES prep
+2025-04-02 15:44:14.297 | INFO     | __main__:main:105 - ========================
+2025-04-02 15:44:14.311 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 15:44:14.312 | INFO     | __main__:main:124 - ======================
+2025-04-02 15:44:14.312 | INFO     | __main__:main:125 - FINISHED data_prep.py
+2025-04-02 15:44:14.312 | INFO     | __main__:main:126 - ======================
+2025-04-02 15:59:00.355 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 15:59:00.356 | INFO     | __main__:main:59 - ======================
+2025-04-02 15:59:00.356 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 15:59:00.357 | INFO     | __main__:main:61 - ======================
+2025-04-02 15:59:00.357 | INFO     | __main__:main:63 - ========================
+2025-04-02 15:59:00.357 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 15:59:00.357 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:03:21.009 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:03:21.011 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:03:21.011 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:03:21.011 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:03:21.011 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:03:21.012 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:03:21.012 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:06:59.804 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:06:59.805 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:06:59.805 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:06:59.806 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:06:59.806 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:06:59.806 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:06:59.806 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:13:20.594 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:13:20.596 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:13:20.596 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:13:20.596 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:13:20.596 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:13:20.596 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:13:20.596 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:15:01.173 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:15:01.174 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:15:01.174 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:15:01.174 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:15:01.175 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:15:01.175 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:15:01.175 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:19:15.821 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:19:15.822 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:19:15.823 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:19:15.823 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:19:15.823 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:19:15.823 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:19:15.824 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:21:20.636 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:21:20.638 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:21:20.638 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:21:20.638 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:21:20.638 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:21:20.638 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:21:20.639 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:24:10.251 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:24:10.256 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:24:10.256 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:24:10.257 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:24:10.257 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:24:10.257 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:24:10.258 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:32:21.002 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:32:21.003 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 16:32:21.013 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 16:32:21.017 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 16:32:21.020 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 16:32:21.020 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 16:32:21.021 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 16:35:12.881 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:35:12.883 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:35:12.883 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:35:12.883 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:35:12.884 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:35:12.884 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:35:12.884 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:42:03.365 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:42:03.367 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:42:03.367 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:42:03.367 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:42:03.367 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:42:03.367 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:42:03.367 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:42:03.370 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 16:42:03.370 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 16:42:03.383 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 16:42:03.384 | INFO     | __main__:main:87 - ========================
+2025-04-02 16:42:03.384 | INFO     | __main__:main:88 - Starting PRODUCTS prep
+2025-04-02 16:42:03.384 | INFO     | __main__:main:89 - ========================
+2025-04-02 16:42:03.385 | INFO     | __main__:main:92 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added', 'subcategory']
+2025-04-02 16:42:03.393 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 16:42:03.393 | INFO     | __main__:main:106 - ========================
+2025-04-02 16:42:03.394 | INFO     | __main__:main:107 - Starting SALES prep
+2025-04-02 16:42:03.394 | INFO     | __main__:main:108 - ========================
+2025-04-02 16:42:03.395 | INFO     | __main__:main:111 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 16:44:59.189 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:44:59.191 | INFO     | __main__:main:59 - ======================
+2025-04-02 16:44:59.191 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 16:44:59.191 | INFO     | __main__:main:61 - ======================
+2025-04-02 16:44:59.191 | INFO     | __main__:main:63 - ========================
+2025-04-02 16:44:59.191 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 16:44:59.191 | INFO     | __main__:main:65 - ========================
+2025-04-02 16:44:59.194 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 16:44:59.194 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 16:44:59.207 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 16:44:59.208 | INFO     | __main__:main:87 - ========================
+2025-04-02 16:44:59.208 | INFO     | __main__:main:88 - Starting PRODUCTS prep
+2025-04-02 16:44:59.208 | INFO     | __main__:main:89 - ========================
+2025-04-02 16:44:59.209 | INFO     | __main__:main:92 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added', 'subcategory']
+2025-04-02 16:44:59.217 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 16:44:59.217 | INFO     | __main__:main:106 - ========================
+2025-04-02 16:44:59.217 | INFO     | __main__:main:107 - Starting SALES prep
+2025-04-02 16:44:59.217 | INFO     | __main__:main:108 - ========================
+2025-04-02 16:44:59.218 | INFO     | __main__:main:111 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 16:44:59.233 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 16:44:59.233 | INFO     | __main__:main:128 - ======================
+2025-04-02 16:44:59.233 | INFO     | __main__:main:129 - FINISHED data_prep.py
+2025-04-02 16:44:59.234 | INFO     | __main__:main:130 - ======================
+2025-04-02 16:49:52.472 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 16:49:52.473 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 16:49:52.485 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 16:49:52.490 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 16:49:52.494 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 16:49:52.495 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 16:49:52.495 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 17:13:01.322 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:13:01.323 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:13:01.324 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:13:01.324 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:13:01.324 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:13:01.324 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:13:01.324 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:13:01.327 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:13:01.327 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:13:25.910 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:13:25.911 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:13:25.911 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:13:25.912 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:13:25.912 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:13:25.912 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:13:25.912 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:13:25.914 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:13:25.915 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:16:24.688 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:16:24.689 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:16:24.690 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:16:24.690 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:16:24.690 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:16:24.690 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:16:24.691 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:16:24.693 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:16:24.693 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:17:19.059 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:17:19.061 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:17:19.061 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:17:19.061 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:17:19.061 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:17:19.061 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:17:19.062 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:17:19.064 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:17:19.065 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:17:56.730 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:17:56.731 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:17:56.731 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:17:56.732 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:17:56.732 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:17:56.732 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:17:56.732 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:17:56.734 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:17:56.735 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:18:48.446 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:18:48.448 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:18:48.448 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:18:48.448 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:18:48.449 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:18:48.449 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:18:48.449 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:18:48.451 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:18:48.452 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:18:48.471 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:18:48.472 | INFO     | __main__:main:86 - ========================
+2025-04-02 17:18:48.472 | INFO     | __main__:main:87 - Starting PRODUCTS prep
+2025-04-02 17:18:48.472 | INFO     | __main__:main:88 - ========================
+2025-04-02 17:18:48.474 | INFO     | __main__:main:91 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added', 'subcategory']
+2025-04-02 17:18:48.483 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:18:48.484 | INFO     | __main__:main:105 - ========================
+2025-04-02 17:18:48.484 | INFO     | __main__:main:106 - Starting SALES prep
+2025-04-02 17:18:48.484 | INFO     | __main__:main:107 - ========================
+2025-04-02 17:18:48.486 | INFO     | __main__:main:110 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:18:48.502 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:18:48.502 | INFO     | __main__:main:127 - ======================
+2025-04-02 17:18:48.502 | INFO     | __main__:main:128 - FINISHED data_prep.py
+2025-04-02 17:18:48.503 | INFO     | __main__:main:129 - ======================
+2025-04-02 17:19:06.053 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:19:06.054 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 17:19:06.059 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:19:06.063 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 17:19:06.066 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 17:19:06.067 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 17:19:06.067 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 17:21:26.080 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:21:26.082 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:21:26.082 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:21:26.082 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:21:26.082 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:21:26.083 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:21:26.083 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:21:26.085 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:21:26.085 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:21:26.097 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:21:26.097 | INFO     | __main__:main:89 - ========================
+2025-04-02 17:21:26.097 | INFO     | __main__:main:90 - Starting PRODUCTS prep
+2025-04-02 17:21:26.098 | INFO     | __main__:main:91 - ========================
+2025-04-02 17:21:26.099 | INFO     | __main__:main:94 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added', 'subcategory']
+2025-04-02 17:21:26.107 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:21:26.107 | INFO     | __main__:main:108 - ========================
+2025-04-02 17:21:26.107 | INFO     | __main__:main:109 - Starting SALES prep
+2025-04-02 17:21:26.108 | INFO     | __main__:main:110 - ========================
+2025-04-02 17:21:26.109 | INFO     | __main__:main:113 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:21:26.125 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:21:26.125 | INFO     | __main__:main:130 - ======================
+2025-04-02 17:21:26.126 | INFO     | __main__:main:131 - FINISHED data_prep.py
+2025-04-02 17:21:26.126 | INFO     | __main__:main:132 - ======================
+2025-04-02 17:22:53.672 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:22:53.673 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:22:53.673 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:22:53.673 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:22:53.673 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:22:53.674 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:22:53.674 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:22:53.676 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:22:53.676 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:22:53.687 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:22:53.688 | INFO     | __main__:main:86 - ========================
+2025-04-02 17:22:53.688 | INFO     | __main__:main:87 - Starting PRODUCTS prep
+2025-04-02 17:22:53.688 | INFO     | __main__:main:88 - ========================
+2025-04-02 17:22:53.690 | INFO     | __main__:main:91 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added', 'subcategory']
+2025-04-02 17:22:53.698 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:22:53.698 | INFO     | __main__:main:105 - ========================
+2025-04-02 17:22:53.698 | INFO     | __main__:main:106 - Starting SALES prep
+2025-04-02 17:22:53.698 | INFO     | __main__:main:107 - ========================
+2025-04-02 17:22:53.700 | INFO     | __main__:main:110 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:22:53.715 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:22:53.716 | INFO     | __main__:main:127 - ======================
+2025-04-02 17:22:53.716 | INFO     | __main__:main:128 - FINISHED data_prep.py
+2025-04-02 17:22:53.716 | INFO     | __main__:main:129 - ======================
+2025-04-02 17:29:41.256 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:29:41.257 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 17:29:41.271 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:29:41.275 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 17:29:41.279 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 17:29:41.280 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 17:29:41.280 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 17:30:56.129 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:30:56.129 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 17:30:56.141 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:30:56.145 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 17:30:56.148 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 17:30:56.149 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 17:30:56.149 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 17:34:50.315 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:34:50.316 | INFO     | __main__:main:121 - Starting data warehouse creation...
+2025-04-02 17:34:50.328 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:34:50.332 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-02 17:34:50.335 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-02 17:34:50.336 | INFO     | __main__:create_dw:109 - Data warehouse created successfully.
+2025-04-02 17:34:50.336 | INFO     | __main__:main:123 - Data warehouse creation complete.
+2025-04-02 17:38:16.505 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:38:16.507 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:38:16.507 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:38:16.507 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:38:16.507 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:38:16.507 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:38:16.507 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:38:16.510 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:38:16.510 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:38:16.522 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:38:16.522 | INFO     | __main__:main:86 - ========================
+2025-04-02 17:38:16.522 | INFO     | __main__:main:87 - Starting PRODUCTS prep
+2025-04-02 17:38:16.522 | INFO     | __main__:main:88 - ========================
+2025-04-02 17:38:16.523 | INFO     | __main__:main:91 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-02 17:38:16.530 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:38:16.531 | INFO     | __main__:main:105 - ========================
+2025-04-02 17:38:16.531 | INFO     | __main__:main:106 - Starting SALES prep
+2025-04-02 17:38:16.531 | INFO     | __main__:main:107 - ========================
+2025-04-02 17:38:16.532 | INFO     | __main__:main:110 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:38:16.547 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:38:16.547 | INFO     | __main__:main:127 - ======================
+2025-04-02 17:38:16.547 | INFO     | __main__:main:128 - FINISHED data_prep.py
+2025-04-02 17:38:16.548 | INFO     | __main__:main:129 - ======================
+2025-04-02 17:40:32.218 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:40:32.219 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:40:32.219 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:40:32.220 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:40:32.220 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:40:32.220 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:40:32.220 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:40:32.222 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:40:32.223 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:40:32.234 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:40:32.235 | INFO     | __main__:main:86 - ========================
+2025-04-02 17:40:32.235 | INFO     | __main__:main:87 - Starting PRODUCTS prep
+2025-04-02 17:40:32.235 | INFO     | __main__:main:88 - ========================
+2025-04-02 17:40:32.237 | INFO     | __main__:main:91 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-02 17:40:32.245 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:40:32.246 | INFO     | __main__:main:105 - ========================
+2025-04-02 17:40:32.246 | INFO     | __main__:main:106 - Starting SALES prep
+2025-04-02 17:40:32.246 | INFO     | __main__:main:107 - ========================
+2025-04-02 17:40:32.248 | INFO     | __main__:main:110 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:40:32.264 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:40:32.264 | INFO     | __main__:main:127 - ======================
+2025-04-02 17:40:32.264 | INFO     | __main__:main:128 - FINISHED data_prep.py
+2025-04-02 17:40:32.264 | INFO     | __main__:main:129 - ======================
+2025-04-02 17:43:15.532 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:43:15.533 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:43:15.534 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:43:15.534 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:43:15.534 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:43:15.534 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:43:15.535 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:43:15.537 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:43:15.537 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:43:15.548 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:43:15.548 | INFO     | __main__:main:86 - ========================
+2025-04-02 17:43:15.548 | INFO     | __main__:main:87 - Starting PRODUCTS prep
+2025-04-02 17:43:15.548 | INFO     | __main__:main:88 - ========================
+2025-04-02 17:43:15.550 | INFO     | __main__:main:91 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-02 17:43:15.557 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:43:15.557 | INFO     | __main__:main:105 - ========================
+2025-04-02 17:43:15.558 | INFO     | __main__:main:106 - Starting SALES prep
+2025-04-02 17:43:15.558 | INFO     | __main__:main:107 - ========================
+2025-04-02 17:43:15.559 | INFO     | __main__:main:110 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:43:15.574 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:43:15.574 | INFO     | __main__:main:127 - ======================
+2025-04-02 17:43:15.574 | INFO     | __main__:main:128 - FINISHED data_prep.py
+2025-04-02 17:43:15.575 | INFO     | __main__:main:129 - ======================
+2025-04-02 17:44:07.135 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:44:07.137 | INFO     | __main__:main:59 - ======================
+2025-04-02 17:44:07.137 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-02 17:44:07.137 | INFO     | __main__:main:61 - ======================
+2025-04-02 17:44:07.137 | INFO     | __main__:main:63 - ========================
+2025-04-02 17:44:07.138 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-02 17:44:07.138 | INFO     | __main__:main:65 - ========================
+2025-04-02 17:44:07.140 | INFO     | __main__:main:68 - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:44:07.141 | INFO     | __main__:main:69 - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-02 17:44:07.151 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-02 17:44:07.152 | INFO     | __main__:main:86 - ========================
+2025-04-02 17:44:07.152 | INFO     | __main__:main:87 - Starting PRODUCTS prep
+2025-04-02 17:44:07.152 | INFO     | __main__:main:88 - ========================
+2025-04-02 17:44:07.154 | INFO     | __main__:main:91 - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-02 17:44:07.162 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-02 17:44:07.162 | INFO     | __main__:main:105 - ========================
+2025-04-02 17:44:07.162 | INFO     | __main__:main:106 - Starting SALES prep
+2025-04-02 17:44:07.163 | INFO     | __main__:main:107 - ========================
+2025-04-02 17:44:07.164 | INFO     | __main__:main:110 - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-02 17:44:07.179 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-02 17:44:07.179 | INFO     | __main__:main:127 - ======================
+2025-04-02 17:44:07.180 | INFO     | __main__:main:128 - FINISHED data_prep.py
+2025-04-02 17:44:07.180 | INFO     | __main__:main:129 - ======================
+2025-04-02 17:44:15.726 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:44:15.727 | INFO     | __main__:main:120 - Starting data warehouse creation...
+2025-04-02 17:44:15.737 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:44:15.738 | ERROR    | __main__:create_product_table:68 - Error creating product table: near ")": syntax error
+2025-04-02 17:44:15.743 | INFO     | __main__:create_sale_table:89 - sale table created.
+2025-04-02 17:44:15.744 | INFO     | __main__:create_dw:108 - Data warehouse created successfully.
+2025-04-02 17:44:15.744 | INFO     | __main__:main:122 - Data warehouse creation complete.
+2025-04-02 17:45:45.865 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:45:45.865 | INFO     | __main__:<module>:33 - Existing database data\dw\smart_sales.db deleted.
+2025-04-02 17:45:45.866 | INFO     | __main__:main:120 - Starting data warehouse creation...
+2025-04-02 17:45:45.877 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:45:45.877 | ERROR    | __main__:create_product_table:68 - Error creating product table: near ")": syntax error
+2025-04-02 17:45:45.881 | INFO     | __main__:create_sale_table:89 - sale table created.
+2025-04-02 17:45:45.882 | INFO     | __main__:create_dw:108 - Data warehouse created successfully.
+2025-04-02 17:45:45.882 | INFO     | __main__:main:122 - Data warehouse creation complete.
+2025-04-02 17:47:09.979 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-02 17:47:09.980 | INFO     | __main__:main:120 - Starting data warehouse creation...
+2025-04-02 17:47:09.989 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-02 17:47:09.992 | INFO     | __main__:create_product_table:66 - product table created.
+2025-04-02 17:47:09.996 | INFO     | __main__:create_sale_table:89 - sale table created.
+2025-04-02 17:47:09.997 | INFO     | __main__:create_dw:108 - Data warehouse created successfully.
+2025-04-02 17:47:09.997 | INFO     | __main__:main:122 - Data warehouse creation complete.
+2025-04-03 08:39:24.146 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-03 08:39:24.147 | INFO     | __main__:main:120 - Starting data warehouse creation...
+2025-04-03 08:39:24.156 | INFO     | __main__:create_customer_table:50 - customer table created.
+2025-04-03 08:39:24.160 | INFO     | __main__:create_product_table:66 - product table created.
+2025-04-03 08:39:24.163 | INFO     | __main__:create_sale_table:89 - sale table created.
+2025-04-03 08:39:24.164 | INFO     | __main__:create_dw:108 - Data warehouse created successfully.
+2025-04-03 08:39:24.164 | INFO     | __main__:main:122 - Data warehouse creation complete.
+2025-04-03 09:13:46.445 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-03 09:13:46.446 | INFO     | __main__:main:143 - Starting data warehouse creation...
+2025-04-03 09:13:46.451 | INFO     | __main__:create_customer_table:51 - customer table created.
+2025-04-03 09:13:46.455 | INFO     | __main__:create_product_table:67 - product table created.
+2025-04-03 09:13:46.459 | INFO     | __main__:create_sale_table:90 - sale table created.
+2025-04-03 09:13:46.460 | INFO     | __main__:create_dw:131 - Data warehouse created successfully.
+2025-04-03 09:13:46.460 | INFO     | __main__:main:145 - Data warehouse creation complete.

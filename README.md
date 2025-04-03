@@ -125,6 +125,9 @@ python3 scripts/etl_to_dw.py
 
 ![alt text](image.png)
 
-
+## Update Github repository
+git add .
+git commit -m "Add etl_to_dw.py and smart_sales.db. Updated create_dw.py and README.me"
+git push -u origin main
 
 

@@ -1,12 +1,17 @@
-# smart-sales-starter-files
+# Smart Sales Starter Files
 
-Starter files to initialize the smart sales project.
+Starter files to initialize the Smart Sales project.
 
------
+---
 
-## Project Setup Guide (2-Windows)
+## Project Setup Guide (Windows)
 
 Run all commands from a PowerShell terminal in the root project folder.
+
+### Step 1: Create a Local Project Virtual Environment
+```shell
+py -m venv .venv
+```
 
 ### Step 2A - Create a Local Project Virtual Environment
 

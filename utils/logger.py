@@ -3,42 +3,42 @@ Logger Setup Script
 File: utils/logger.py
 
 This script provides logging functions for the project. Logging is an essential way to
-track events and issues during software execution. This logger setup uses Loguru to log
-messages and errors both to a file and optionally to the console.
+track events and issues during software execution. This logger setup uses Python's built-in
+logging module to log messages and errors both to the console and a log file.
 
 Features:
-- Logs information, warnings, and errors to a designated log file.
-- Ensures the log directory exists.
-- Configurable for console output if needed.
+- Logs information, warnings, and errors to the console and a log file.
+- Configurable logging format and level.
 """
 
 # Imports from Python Standard Library
+import logging
 import pathlib
+import sys
 
-# Imports from external packages
-from loguru import logger
+# Add project root to sys.path
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
 
-# Define global constants
-CURRENT_SCRIPT = pathlib.Path(__file__).stem  # Gets the current file name without the extension
-LOG_FOLDER: pathlib.Path = pathlib.Path("logs")  # Directory where logs will be stored
-LOG_FILE: pathlib.Path = LOG_FOLDER.joinpath("project_log.log")  # Path to the log file
+# Configure logger
+LOG_FOLDER = pathlib.Path("logs")
+LOG_FILE = LOG_FOLDER / "project_log.log"
 
-# Ensure the log folder exists or create it
-try:
-    LOG_FOLDER.mkdir(exist_ok=True)
-    logger.info(f"Log folder created at: {LOG_FOLDER}")
-except Exception as e:
-    logger.error(f"Error creating log folder: {e}")
+# Ensure the log folder exists
+LOG_FOLDER.mkdir(exist_ok=True)
 
-# Configure Loguru to write to the log file
-try:
-    logger.add(LOG_FILE, level="INFO")
-    logger.info(f"Logging to file: {LOG_FILE}")
-except Exception as e:
-    logger.error(f"Error configuring logger to write to file: {e}")
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
+    ]
+)
 
-# Optionally, add console output for logging (Uncomment the following line if needed)
-# logger.add(sys.stderr, level="DEBUG")
+logger = logging.getLogger("smart-store")
 
 
 def log_example() -> None:
@@ -53,13 +53,12 @@ def log_example() -> None:
 
 def main() -> None:
     """Main function to execute the logger setup and demonstrate its usage."""
-    logger.info(f"STARTING {CURRENT_SCRIPT}.py")
+    logger.info("STARTING logger.py")
     
     # Call the example logging function
     log_example()
     
-    logger.info(f"View the log output at {LOG_FILE}")
-    logger.info(f"EXITING {CURRENT_SCRIPT}.py.")
+    logger.info("EXITING logger.py.")
 
 
 # Conditional execution block that calls main() only when this file is executed directly

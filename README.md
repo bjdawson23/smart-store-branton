@@ -9,6 +9,7 @@ Starter files to initialize the Smart Sales project.
 Run all commands from a PowerShell terminal in the root project folder.
 
 ### Step 1: Create a Local Project Virtual Environment
+
 ```shell
 py -m venv .venv
 ```
@@ -43,6 +44,7 @@ py -m datafun_venv_checker.venv_checker
 ```shell
 py scripts/data_prep.py
 ```
+
 ### Git to pull changes from Github Project repo
 
 git pull origin main
@@ -100,8 +102,6 @@ git push
 
 ## Run Test Script
 
-py tests\test_data_scrubber.py
-
 ## Create or Edit Your Main Data Prep script(s)
 
 ## In your main data preparation script (e.g., scripts\data-prep.py) - or scripts. There can be a LOT of work in cleaning, you might want to create and maintain one data_prep file for each of the raw tables, for example you might have either all in one
@@ -138,9 +138,9 @@ git push -u origin main
 
 ## Module 5 apply core BI techniques (slicing, dicing, and drilldown) and generate interactive visualizations to explore business performance. This project reinforces key data analysis and reporting skills
 
-## Install Power BI Desktop from: https://powerbi.microsoft.com/downloads
+## Install Power BI Desktop from: <https://powerbi.microsoft.com/downloads>
 
-## Install SQLite ODBC Driver  from: https://www.ch-werner.de/sqliteodbc
+## Install SQLite ODBC Driver  from: <https://www.ch-werner.de/sqliteodbc>
 
 ## Configure ODBC Data Source Name (DSN).   Install SQLite3 64-bit version.  Setup/Connect to SmartSalesDSN
 
@@ -150,7 +150,7 @@ git push -u origin main
 2. I kept all the dashboard visual and stored on page 1 and page 2.  Page 1 has a sale date slicer with a matrix table showing a quantity of each product sold by category.  This paga also contains sames amount by Year, Quarter or Month depending on drill down. Page 2 has a bar graph of total spend by customer and below a quantity by product ID with a region and category slicer.
 3. ![](image-1.png)
 4. ![alt text](image-2.png)
-5. ![alt text](image-3.png) ![alt text](image-4.png) 
+5. ![alt text](image-3.png) ![alt text](image-4.png)
 
 ## Git Add-Commit-Push - do this at the end, but good to do after each improvement
 
@@ -158,6 +158,23 @@ git add .
 git commit -m "Completed analysis and visualization"
 git push -u origin main
 
+## Module 6 BI Insights and Storytelling
 
-
-
+    ```
+    Section 1. The Business Goal
+        Clearly state the exact question being addressed and why it matters.
+    Section 2. Data Source
+        What information did you start with (prepared data, data warehouse, or pre-computed cube)?
+        Clearly indicate which columns of which tables were used.
+    Section 3. Tools
+        Tell us what tools you used and why.
+    Section 4. Workflow & Logic
+        Describe the dimensions and aggregations - the logic needed for your analysis
+        If using a graphical tool like Power BI or Tableau Prep, use screenshots to show your work. 
+    Section 5. Results
+        Present your insights with narrative and visualizations.
+        Explain any suggested actions based on the results you uncovered.
+    Section 6: Suggested Business Action 
+        What actions are recommended based on your work
+    Section 7. Challenges
+        Mention any challenges you encountered and how they were resolved.

@@ -73,6 +73,7 @@ loguru
 
 # Jupyter and related tools
 ipykernel
+ipython
 jupyterlab
 
 # Data analysis
@@ -83,6 +84,7 @@ pandas
 matplotlib
 seaborn
 plotly
+ipywidgets
 
 # Work with Apache Spark for big data
 pyspark==4.0.0.dev1

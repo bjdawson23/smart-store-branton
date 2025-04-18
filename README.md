@@ -175,11 +175,12 @@ git push -u origin main
         SALES BY DAY AND PRODUCT
         ![alt text](image-5.png)
         SALES BY DAY OF WEEK
-        ![alt text](image-7.png)
+        ![alt text](image-6.png)
         SALES BY MONTH AND PRODUCT
-        ![alt text](image-9.png)
+        ![alt text](image-9.png)       
         SALES BY REGION
-        ![alt text](image-10.png)
+        ![alt text](image-11.png)
+        Month DETAILS:
          Month  product_id  TotalSales
             0       1         101     5551.84
             4       2         101    10310.56

@@ -3364,3 +3364,196 @@ dtype: int64
 2025-04-03 09:13:46.459 | INFO     | __main__:create_sale_table:90 - sale table created.
 2025-04-03 09:13:46.460 | INFO     | __main__:create_dw:131 - Data warehouse created successfully.
 2025-04-03 09:13:46.460 | INFO     | __main__:main:145 - Data warehouse creation complete.
+2025-04-18 09:44:15,669 - INFO - Test log message
+2025-04-18 09:46:35,026 - INFO - Test log message
+2025-04-18 09:52:12,035 - INFO - Test log message
+2025-04-18 09:52:12,036 - INFO - Starting OLAP Cubing process...
+2025-04-18 09:52:12,053 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 09:52:12,079 - INFO - OLAP cube created with dimensions: ['DayOfWeek', 'product_id', 'customer_id']
+2025-04-18 09:52:12,082 - INFO - OLAP cube saved to data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 09:52:12,082 - INFO - OLAP Cubing process completed successfully.
+2025-04-18 09:52:12,082 - INFO - Please see outputs in data\olap_cubing_outputs
+2025-04-18 10:04:43,762 - INFO - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 10:04:43,766 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 10:04:43,770 - INFO - Sales aggregated by DayOfWeek successfully.
+2025-04-18 10:04:43,770 - INFO - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 10:04:43,771 - INFO - Least profitable day: Friday
+2025-04-18 10:04:43,771 - INFO - Close the Figure to complete this script.
+2025-04-18 10:04:44,647 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:04:44,649 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:04:44,717 - INFO - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 10:04:58,370 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:06:21,194 - INFO - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-18 10:06:21,197 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 10:06:21,203 - INFO - Top products identified for each day of the week.
+2025-04-18 10:06:21,456 - INFO - Stacked bar chart saved to data\results\sales_by_day_and_product.png.
+2025-04-18 10:06:39,481 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:20:45,143 - INFO - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-18 10:20:45,146 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 10:20:45,149 - INFO - Top products identified for each day of the week.
+2025-04-18 10:20:45,391 - INFO - Stacked bar chart saved to data\results\sales_by_day_and_product.png.
+2025-04-18 10:21:32,460 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:22:52,571 - INFO - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 10:22:52,573 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 10:22:52,575 - INFO - Sales aggregated by DayOfWeek successfully.
+2025-04-18 10:22:52,576 - INFO - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 10:22:52,576 - INFO - Least profitable day: Friday
+2025-04-18 10:22:52,576 - INFO - Close the Figure to complete this script.
+2025-04-18 10:22:52,697 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:22:52,698 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:22:52,761 - INFO - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 10:22:57,130 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:36:58,531 - INFO - Test log message
+2025-04-18 10:36:58,532 - INFO - Starting OLAP Cubing process...
+2025-04-18 10:36:58,534 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 10:36:58,538 - ERROR - Error creating OLAP cube: 'category'
+2025-04-18 10:41:52,202 - INFO - Test log message
+2025-04-18 10:41:52,203 - INFO - Starting OLAP Cubing process...
+2025-04-18 10:41:52,205 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 10:41:52,208 - ERROR - Error creating OLAP cube: 'category'
+2025-04-18 10:44:48,451 - INFO - Test log message
+2025-04-18 10:44:48,451 - INFO - Starting OLAP Cubing process...
+2025-04-18 10:44:48,453 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 10:44:48,457 - ERROR - Error creating OLAP cube: 'region'
+2025-04-18 10:45:50,930 - INFO - Test log message
+2025-04-18 10:45:50,930 - INFO - Starting OLAP Cubing process...
+2025-04-18 10:45:50,932 - ERROR - Error loading sale table data from data warehouse: Execution failed on sql '
+        SELECT 
+            sale.sale_id,
+            sale.customer_id,
+            sale.product_id,
+            sale.sale_date,
+            sale.sale_amount_usd,
+            product.category,
+            customer.region
+        FROM sale
+        INNER JOIN product ON sale.product_id = product.product_id
+        ': no such column: customer.region
+2025-04-18 10:46:15,574 - INFO - Test log message
+2025-04-18 10:46:15,574 - INFO - Starting OLAP Cubing process...
+2025-04-18 10:46:15,575 - ERROR - Error loading sale table data from data warehouse: Execution failed on sql '
+        SELECT 
+            sale.sale_id,
+            sale.customer_id,
+            sale.product_id,
+            sale.sale_date,
+            sale.sale_amount_usd,
+            product.category
+            customer.region
+        FROM sale
+        INNER JOIN product ON sale.product_id = product.product_id
+        ': near ".": syntax error
+2025-04-18 10:49:52,829 - INFO - Test log message
+2025-04-18 10:49:52,830 - INFO - Starting OLAP Cubing process...
+2025-04-18 10:49:52,832 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 10:49:52,843 - INFO - OLAP cube created with dimensions: ['DayOfWeek', 'Month', 'Year', 'product_id', 'category', 'customer_id', 'region']
+2025-04-18 10:49:52,846 - INFO - OLAP cube saved to data\olap_cubing_outputs\multidimensional_olap_cube2.csv.
+2025-04-18 10:49:52,846 - INFO - OLAP Cubing process completed successfully.
+2025-04-18 10:49:52,847 - INFO - Please see outputs in data\olap_cubing_outputs
+2025-04-18 10:52:45,409 - INFO - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 10:52:45,411 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 10:52:45,414 - INFO - Sales aggregated by DayOfWeek successfully.
+2025-04-18 10:52:45,414 - INFO - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 10:52:45,414 - INFO - Least profitable day: Friday
+2025-04-18 10:52:45,415 - INFO - Close the Figure to complete this script.
+2025-04-18 10:52:45,544 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:52:45,545 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:52:45,617 - INFO - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 10:52:50,321 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:54:01,487 - INFO - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 10:54:01,490 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube2.csv.
+2025-04-18 10:54:01,492 - INFO - Sales aggregated by DayOfWeek successfully.
+2025-04-18 10:54:01,493 - INFO - Least profitable day: Saturday with revenue $4740.70.
+2025-04-18 10:54:01,493 - INFO - Least profitable day: Saturday
+2025-04-18 10:54:01,493 - INFO - Close the Figure to complete this script.
+2025-04-18 10:54:01,616 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:54:01,617 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:54:01,687 - INFO - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 10:54:34,138 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:55:45,323 - INFO - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 10:55:45,326 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 10:55:45,328 - INFO - Sales aggregated by DayOfWeek successfully.
+2025-04-18 10:55:45,328 - INFO - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 10:55:45,329 - INFO - Least profitable day: Friday
+2025-04-18 10:55:45,329 - INFO - Close the Figure to complete this script.
+2025-04-18 10:55:45,455 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:55:45,457 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 10:55:45,523 - INFO - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 10:56:07,922 - INFO - Analysis and visualization completed successfully.
+2025-04-18 10:57:15,023 - INFO - Starting SALES_TOP_PRODUCT_BY_WEEKDAY analysis...
+2025-04-18 10:57:15,026 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube2.csv.
+2025-04-18 10:57:15,029 - INFO - Top products identified for each day of the week.
+2025-04-18 10:57:15,298 - INFO - Stacked bar chart saved to data\results\sales_by_day_and_product.png.
+2025-04-18 10:57:54,785 - INFO - Analysis and visualization completed successfully.
+2025-04-18 11:20:38,869 - INFO - Test log message
+2025-04-18 11:20:38,869 - INFO - Starting OLAP Cubing process...
+2025-04-18 11:20:38,871 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 11:20:38,881 - INFO - OLAP cube created with dimensions: ['Month', 'product_id', 'category', 'customer_id']
+2025-04-18 11:20:38,884 - INFO - OLAP cube saved to data\olap_cubing_outputs\multidimensional_olap_month_cube.csv.
+2025-04-18 11:20:38,884 - INFO - OLAP Cubing process completed successfully.
+2025-04-18 11:20:38,884 - INFO - Please see outputs in data\olap_cubing_outputs
+2025-04-18 11:28:04,334 - INFO - Starting SALES_TOP_PRODUCT_BY_MONTH analysis...
+2025-04-18 11:28:04,337 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_month_cube.csv.
+2025-04-18 11:28:04,340 - INFO - Top products identified for each month.
+2025-04-18 11:28:04,340 - INFO - Top products by month analysis completed.
+2025-04-18 11:30:31,111 - INFO - Starting SALES_TOP_PRODUCT_BY_MONTH analysis...
+2025-04-18 11:30:31,115 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_month_cube.csv.
+2025-04-18 11:30:31,118 - INFO - Top products identified for each month.
+2025-04-18 11:30:31,118 - INFO - Top products by month analysis completed.
+2025-04-18 11:30:31,471 - INFO - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 11:30:46,033 - INFO - Analysis and visualization completed successfully.
+2025-04-18 11:38:50,263 - INFO - Test log message
+2025-04-18 11:38:50,264 - INFO - Starting OLAP Cubing process...
+2025-04-18 11:38:50,265 - INFO - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 11:38:50,274 - INFO - OLAP cube created with dimensions: ['region', 'product_id', 'category', 'customer_id']
+2025-04-18 11:38:50,277 - INFO - OLAP cube saved to data\olap_cubing_outputs\multidimensional_olap_region_cube.csv.
+2025-04-18 11:38:50,277 - INFO - OLAP Cubing process completed successfully.
+2025-04-18 11:38:50,277 - INFO - Please see outputs in data\olap_cubing_outputs
+2025-04-18 11:50:03,514 - INFO - Starting SALES_LOW_REVENUE_REGION analysis...
+2025-04-18 11:50:03,517 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_region_cube.csv.
+2025-04-18 11:50:03,518 - ERROR - Error analyzing sales by Region: 'Region'
+2025-04-18 11:52:35,057 - INFO - Starting SALES_LOW_REVENUE_REGION analysis...
+2025-04-18 11:52:35,060 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_region_cube.csv.
+2025-04-18 11:52:35,062 - INFO - Sales aggregated by Region successfully.
+2025-04-18 11:52:35,063 - INFO - Least profitable region: West with revenue $4233.64.
+2025-04-18 11:52:35,063 - INFO - Least profitable region: West
+2025-04-18 11:52:35,063 - INFO - Close the Figure to complete this script.
+2025-04-18 11:52:35,187 - ERROR - Error visualizing sales by region: 'Region'
+2025-04-18 11:53:42,697 - INFO - Starting SALES_LOW_REVENUE_REGION analysis...
+2025-04-18 11:53:42,700 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_region_cube.csv.
+2025-04-18 11:53:42,702 - INFO - Sales aggregated by Region successfully.
+2025-04-18 11:53:42,702 - INFO - Least profitable region: West with revenue $4233.64.
+2025-04-18 11:53:42,702 - INFO - Least profitable region: West
+2025-04-18 11:53:42,703 - INFO - Close the Figure to complete this script.
+2025-04-18 11:53:42,876 - INFO - Visualization saved to data\results\sales_by_region.png.
+2025-04-18 11:54:03,840 - INFO - Analysis and visualization completed successfully.
+2025-04-18 13:42:54,859 - INFO - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 13:42:54,862 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 13:42:54,864 - INFO - Sales aggregated by DayOfWeek successfully.
+2025-04-18 13:42:54,864 - INFO - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 13:42:54,864 - INFO - Least profitable day: Friday
+2025-04-18 13:42:54,864 - INFO - Close the Figure to complete this script.
+2025-04-18 13:42:55,046 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 13:42:55,047 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-18 13:42:55,113 - INFO - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 13:43:03,848 - INFO - Analysis and visualization completed successfully.
+2025-04-18 13:46:59,278 - INFO - Starting SALES_LOW_REVENUE_REGION analysis...
+2025-04-18 13:46:59,281 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_region_cube.csv.
+2025-04-18 13:46:59,283 - INFO - Sales aggregated by Region successfully.
+2025-04-18 13:46:59,284 - INFO - Least profitable region: West with revenue $4233.64.
+2025-04-18 13:46:59,284 - INFO - Least profitable region: West
+2025-04-18 13:46:59,285 - INFO - Close the Figure to complete this script.
+2025-04-18 13:46:59,461 - INFO - Visualization saved to data\results\sales_by_region.png.
+2025-04-18 13:47:05,673 - INFO - Analysis and visualization completed successfully.
+2025-04-18 13:47:53,276 - INFO - Starting SALES_TOP_PRODUCT_BY_MONTH analysis...
+2025-04-18 13:47:53,279 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_month_cube.csv.
+2025-04-18 13:47:53,282 - INFO - Top products identified for each month.
+2025-04-18 13:47:53,282 - INFO - Top products by month analysis completed.
+2025-04-18 13:47:53,552 - INFO - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 13:48:06,033 - INFO - Analysis and visualization completed successfully.
+2025-04-18 13:48:43,226 - INFO - Starting SALES_TOP_PRODUCT_BY_MONTH analysis...
+2025-04-18 13:48:43,229 - INFO - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_month_cube.csv.
+2025-04-18 13:48:43,233 - INFO - Top products identified for each month.
+2025-04-18 13:48:43,233 - INFO - Top products by month analysis completed.
+2025-04-18 13:48:43,499 - INFO - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 13:49:00,468 - INFO - Analysis and visualization completed successfully.

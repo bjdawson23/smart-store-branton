@@ -162,19 +162,38 @@ git push -u origin main
 
     ```
     Section 1. The Business Goal
-        Clearly state the exact question being addressed and why it matters.
+        The initial goal is to look at sales by day of the week and product. This will help determine staffing needs and hours of operation needs and if we should discontinue a specific productd.  Next, the plan is to look at sales by region and determine possible needs for more sales efforts in given regions.  Finally we will look at sales by month.  This will give a feel for seasonal spending patterns.
     Section 2. Data Source
         What information did you start with (prepared data, data warehouse, or pre-computed cube)?
-        Clearly indicate which columns of which tables were used.
+        I used the smartsales.db and the following fields: saleid, customerid, productid, sale_amount_usd and region. Sales were summed and saleid were aggregated for reporting.
     Section 3. Tools
-        Tell us what tools you used and why.
+        I used OLAP and Cubing Scripts.  I wanted to expand my knowledge and work and test with OLAP and the cube scripts.
     Section 4. Workflow & Logic
-        Describe the dimensions and aggregations - the logic needed for your analysis
-        If using a graphical tool like Power BI or Tableau Prep, use screenshots to show your work. 
+        The dimensions used were [DayofWeek,Month,Region], product_id and customer_id to look at the different goals specified above.  Metrics include a sum and mean of sale_amount_usd.  I also took count of sale_id to see the total transactions.
     Section 5. Results
         Present your insights with narrative and visualizations.
+        SALES BY DAY AND PRODUCT
+        ![alt text](image-5.png)
+        SALES BY DAY OF WEEK
+        ![alt text](image-7.png)
+        SALES BY MONTH AND PRODUCT
+        ![alt text](image-9.png)
+        SALES BY REGION
+        ![alt text](image-10.png)
+         Month  product_id  TotalSales
+            0       1         101     5551.84
+            4       2         101    10310.56
+            10      3         101    11896.80
+            13      4         101     7138.08
+            19      5         101     1586.24
+            25      6         101     2379.36
+            31      7         101    15069.28
+            38      8         101     2379.36
+            44      9         101     6344.96
+            47     10         101     5551.84
         Explain any suggested actions based on the results you uncovered.
+        We may need to look at whether or not Friday is a good day to be open as it is the slowest day of the week. It was the least profitable day: Friday with revenue $8617.76.  The least profitable region was the West with revenue of $4233.64.  May and June are the lease profitable months of the sample.
     Section 6: Suggested Business Action 
-        What actions are recommended based on your work
+        Suggested actions would be to consider different hours of operation on Fridays.  We should consider a differend array of products for May and June. The top seller was product id 101 (laptop). We should look at the best selling region in the East and share best practices to improve sales in the other regions.            
     Section 7. Challenges
-        Mention any challenges you encountered and how they were resolved.
+        I had a few issues with the logger script and a few minor issues with my olap scripts, but used copilot and was able to resolve the issues.

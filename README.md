@@ -173,13 +173,13 @@ git push -u origin main
     Section 5. Results
         Present your insights with narrative and visualizations.
         SALES BY DAY AND PRODUCT
-        ![alt text](image-5.png)
+![alt text](image-5.png)
         SALES BY DAY OF WEEK
-        ![alt text](image-6.png)
+![alt text](image-6.png)
         SALES BY MONTH AND PRODUCT
-        ![alt text](image-9.png)       
+![alt text](image-7.png)
         SALES BY REGION
-        ![alt text](image-11.png)
+![alt text](image-8.png)
         Month DETAILS:
          Month  product_id  TotalSales
             0       1         101     5551.84
@@ -194,7 +194,7 @@ git push -u origin main
             47     10         101     5551.84
         Explain any suggested actions based on the results you uncovered.
         We may need to look at whether or not Friday is a good day to be open as it is the slowest day of the week. It was the least profitable day: Friday with revenue $8617.76.  The least profitable region was the West with revenue of $4233.64.  May and June are the lease profitable months of the sample.
-    Section 6: Suggested Business Action 
-        Suggested actions would be to consider different hours of operation on Fridays.  We should consider a differend array of products for May and June. The top seller was product id 101 (laptop). We should look at the best selling region in the East and share best practices to improve sales in the other regions.            
+    Section 6: Suggested Business Action
+        Suggested actions would be to consider different hours of operation on Fridays.  We should consider a differend array of products for May and June. The top seller was product id 101 (laptop). We should look at the best selling region in the East and share best practices to improve sales in the other regions.
     Section 7. Challenges
         I had a few issues with the logger script and a few minor issues with my olap scripts, but used copilot and was able to resolve the issues.

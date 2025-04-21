@@ -155,3 +155,11 @@ git add .
 git commit -m "Completed analysis and visualization"
 git push -u origin main
 ```
+
+## Module 7
+
+The goal will be to determine high return rates based on region, customer, product, sales rep and by year.
+Used Python and SQLite and modified data_prep.py to prep the P7 csv data files and place in data/prepared folder.
+Added new p7_create_dw.py and p7_etl_to_dw.py that create slqlite database called store_returns.db.
+Used Power BI to aggregate and visualize the data.
+

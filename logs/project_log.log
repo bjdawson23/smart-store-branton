@@ -3557,3 +3557,553 @@ dtype: int64
 2025-04-18 13:48:43,233 - INFO - Top products by month analysis completed.
 2025-04-18 13:48:43,499 - INFO - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
 2025-04-18 13:49:00,468 - INFO - Analysis and visualization completed successfully.
+2025-04-19 12:23:18,007 - INFO - ======================
+2025-04-19 12:23:18,008 - INFO - STARTING data_prep.py
+2025-04-19 12:23:18,008 - INFO - ======================
+2025-04-19 12:23:18,008 - INFO - ========================
+2025-04-19 12:23:18,008 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:23:18,009 - INFO - ========================
+2025-04-19 12:23:18,011 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:23:18,011 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:23:18,036 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:23:18,036 - INFO - ========================
+2025-04-19 12:23:18,036 - INFO - Starting PRODUCTS prep
+2025-04-19 12:23:18,037 - INFO - ========================
+2025-04-19 12:23:18,040 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:23:18,050 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:23:18,050 - INFO - ========================
+2025-04-19 12:23:18,051 - INFO - Starting SALES prep
+2025-04-19 12:23:18,051 - INFO - ========================
+2025-04-19 12:23:18,053 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:23:18,076 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:23:18,077 - INFO - ======================
+2025-04-19 12:23:18,077 - INFO - FINISHED data_prep.py
+2025-04-19 12:23:18,077 - INFO - ======================
+2025-04-19 12:26:26,967 - INFO - ======================
+2025-04-19 12:26:26,968 - INFO - STARTING data_prep.py
+2025-04-19 12:26:26,968 - INFO - ======================
+2025-04-19 12:26:26,968 - INFO - ========================
+2025-04-19 12:26:26,968 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:26:26,968 - INFO - ========================
+2025-04-19 12:26:26,971 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:26:26,971 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:26:26,981 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:26:26,982 - INFO - ========================
+2025-04-19 12:26:26,982 - INFO - Starting PRODUCTS prep
+2025-04-19 12:26:26,982 - INFO - ========================
+2025-04-19 12:26:26,984 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:26:26,994 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:26:26,994 - INFO - ========================
+2025-04-19 12:26:26,995 - INFO - Starting SALES prep
+2025-04-19 12:26:26,995 - INFO - ========================
+2025-04-19 12:26:26,997 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:26:27,015 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:26:27,015 - INFO - ======================
+2025-04-19 12:26:27,015 - INFO - FINISHED data_prep.py
+2025-04-19 12:26:27,015 - INFO - ======================
+2025-04-19 12:26:27,016 - INFO - ========================
+2025-04-19 12:26:27,016 - INFO - Starting P7 CUSTOMERS prep
+2025-04-19 12:26:27,016 - INFO - ========================
+2025-04-19 12:29:05,965 - INFO - ======================
+2025-04-19 12:29:05,965 - INFO - STARTING data_prep.py
+2025-04-19 12:29:05,966 - INFO - ======================
+2025-04-19 12:29:05,966 - INFO - ========================
+2025-04-19 12:29:05,966 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:29:05,966 - INFO - ========================
+2025-04-19 12:29:05,969 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:29:05,969 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:29:05,980 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:29:05,980 - INFO - ========================
+2025-04-19 12:29:05,980 - INFO - Starting PRODUCTS prep
+2025-04-19 12:29:05,980 - INFO - ========================
+2025-04-19 12:29:05,982 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:29:05,991 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:29:05,991 - INFO - ========================
+2025-04-19 12:29:05,991 - INFO - Starting SALES prep
+2025-04-19 12:29:05,991 - INFO - ========================
+2025-04-19 12:29:05,992 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:29:06,010 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:29:06,011 - INFO - ======================
+2025-04-19 12:29:06,011 - INFO - FINISHED data_prep.py
+2025-04-19 12:29:06,011 - INFO - ======================
+2025-04-19 12:29:06,012 - INFO - ========================
+2025-04-19 12:29:06,012 - INFO - Starting P7 CUSTOMERS prep
+2025-04-19 12:29:06,012 - INFO - ========================
+2025-04-19 12:40:23,700 - INFO - ======================
+2025-04-19 12:40:23,700 - INFO - STARTING data_prep.py
+2025-04-19 12:40:23,701 - INFO - ======================
+2025-04-19 12:40:23,701 - INFO - ========================
+2025-04-19 12:40:23,701 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:40:23,701 - INFO - ========================
+2025-04-19 12:40:23,704 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:40:23,704 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:40:23,717 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:40:23,717 - INFO - ========================
+2025-04-19 12:40:23,717 - INFO - Starting PRODUCTS prep
+2025-04-19 12:40:23,717 - INFO - ========================
+2025-04-19 12:40:23,719 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:40:23,727 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:40:23,727 - INFO - ========================
+2025-04-19 12:40:23,727 - INFO - Starting SALES prep
+2025-04-19 12:40:23,728 - INFO - ========================
+2025-04-19 12:40:23,730 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:40:23,747 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:40:23,747 - INFO - ======================
+2025-04-19 12:40:23,748 - INFO - FINISHED data_prep.py
+2025-04-19 12:40:23,748 - INFO - ======================
+2025-04-19 12:40:23,748 - INFO - ========================
+2025-04-19 12:40:23,748 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:40:23,749 - INFO - ========================
+2025-04-19 12:40:23,750 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:42:22,657 - INFO - ======================
+2025-04-19 12:42:22,657 - INFO - STARTING data_prep.py
+2025-04-19 12:42:22,657 - INFO - ======================
+2025-04-19 12:42:22,658 - INFO - ========================
+2025-04-19 12:42:22,658 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:42:22,658 - INFO - ========================
+2025-04-19 12:42:22,660 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:42:22,661 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:42:22,670 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:42:22,670 - INFO - ========================
+2025-04-19 12:42:22,671 - INFO - Starting PRODUCTS prep
+2025-04-19 12:42:22,671 - INFO - ========================
+2025-04-19 12:42:22,672 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:42:22,681 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:42:22,682 - INFO - ========================
+2025-04-19 12:42:22,682 - INFO - Starting SALES prep
+2025-04-19 12:42:22,682 - INFO - ========================
+2025-04-19 12:42:22,684 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:42:22,701 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:42:22,701 - INFO - ======================
+2025-04-19 12:42:22,702 - INFO - FINISHED data_prep.py
+2025-04-19 12:42:22,702 - INFO - ======================
+2025-04-19 12:42:22,702 - INFO - ========================
+2025-04-19 12:42:22,703 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:42:22,703 - INFO - ========================
+2025-04-19 12:42:22,704 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:42:22,711 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:42:22,711 - INFO - ========================
+2025-04-19 12:42:22,711 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:42:22,712 - INFO - ========================
+2025-04-19 12:44:33,526 - INFO - ======================
+2025-04-19 12:44:33,526 - INFO - STARTING data_prep.py
+2025-04-19 12:44:33,526 - INFO - ======================
+2025-04-19 12:44:33,526 - INFO - ========================
+2025-04-19 12:44:33,527 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:44:33,527 - INFO - ========================
+2025-04-19 12:44:33,529 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:44:33,530 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:44:33,541 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:44:33,542 - INFO - ========================
+2025-04-19 12:44:33,542 - INFO - Starting PRODUCTS prep
+2025-04-19 12:44:33,543 - INFO - ========================
+2025-04-19 12:44:33,544 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:44:33,555 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:44:33,556 - INFO - ========================
+2025-04-19 12:44:33,556 - INFO - Starting SALES prep
+2025-04-19 12:44:33,556 - INFO - ========================
+2025-04-19 12:44:33,558 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:44:33,578 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:44:33,578 - INFO - ======================
+2025-04-19 12:44:33,578 - INFO - FINISHED data_prep.py
+2025-04-19 12:44:33,579 - INFO - ======================
+2025-04-19 12:44:33,579 - INFO - ========================
+2025-04-19 12:44:33,579 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:44:33,579 - INFO - ========================
+2025-04-19 12:46:03,943 - INFO - ======================
+2025-04-19 12:46:03,943 - INFO - STARTING data_prep.py
+2025-04-19 12:46:03,944 - INFO - ======================
+2025-04-19 12:46:03,944 - INFO - ========================
+2025-04-19 12:46:03,944 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:46:03,945 - INFO - ========================
+2025-04-19 12:46:03,947 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:46:03,947 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:46:03,957 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:46:03,958 - INFO - ========================
+2025-04-19 12:46:03,959 - INFO - Starting PRODUCTS prep
+2025-04-19 12:46:03,959 - INFO - ========================
+2025-04-19 12:46:03,960 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:46:03,968 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:46:03,969 - INFO - ========================
+2025-04-19 12:46:03,969 - INFO - Starting SALES prep
+2025-04-19 12:46:03,970 - INFO - ========================
+2025-04-19 12:46:03,971 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:46:03,986 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:46:03,987 - INFO - ======================
+2025-04-19 12:46:03,987 - INFO - FINISHED data_prep.py
+2025-04-19 12:46:03,987 - INFO - ======================
+2025-04-19 12:46:03,987 - INFO - ========================
+2025-04-19 12:46:03,988 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:46:03,988 - INFO - ========================
+2025-04-19 12:49:07,889 - INFO - ======================
+2025-04-19 12:49:07,889 - INFO - STARTING data_prep.py
+2025-04-19 12:49:07,889 - INFO - ======================
+2025-04-19 12:49:07,889 - INFO - ========================
+2025-04-19 12:49:07,890 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:49:07,890 - INFO - ========================
+2025-04-19 12:49:07,892 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:49:07,893 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:49:07,904 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:49:07,904 - INFO - ========================
+2025-04-19 12:49:07,905 - INFO - Starting PRODUCTS prep
+2025-04-19 12:49:07,905 - INFO - ========================
+2025-04-19 12:49:07,906 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:49:07,915 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:49:07,915 - INFO - ========================
+2025-04-19 12:49:07,916 - INFO - Starting SALES prep
+2025-04-19 12:49:07,916 - INFO - ========================
+2025-04-19 12:49:07,918 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:49:07,937 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:49:07,937 - INFO - ======================
+2025-04-19 12:49:07,937 - INFO - FINISHED data_prep.py
+2025-04-19 12:49:07,937 - INFO - ======================
+2025-04-19 12:49:07,938 - INFO - ========================
+2025-04-19 12:49:07,938 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:49:07,938 - INFO - ========================
+2025-04-19 12:49:07,939 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:49:07,946 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:49:07,947 - INFO - ========================
+2025-04-19 12:49:07,947 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:49:07,947 - INFO - ========================
+2025-04-19 12:50:29,370 - INFO - ======================
+2025-04-19 12:50:29,370 - INFO - STARTING data_prep.py
+2025-04-19 12:50:29,370 - INFO - ======================
+2025-04-19 12:50:29,371 - INFO - ========================
+2025-04-19 12:50:29,371 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:50:29,371 - INFO - ========================
+2025-04-19 12:50:29,373 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:50:29,374 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:50:29,383 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:50:29,384 - INFO - ========================
+2025-04-19 12:50:29,384 - INFO - Starting PRODUCTS prep
+2025-04-19 12:50:29,384 - INFO - ========================
+2025-04-19 12:50:29,386 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:50:29,396 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:50:29,400 - INFO - ========================
+2025-04-19 12:50:29,401 - INFO - Starting SALES prep
+2025-04-19 12:50:29,402 - INFO - ========================
+2025-04-19 12:50:29,404 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:50:29,419 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:50:29,420 - INFO - ======================
+2025-04-19 12:50:29,421 - INFO - FINISHED data_prep.py
+2025-04-19 12:50:29,421 - INFO - ======================
+2025-04-19 12:50:29,421 - INFO - ========================
+2025-04-19 12:50:29,421 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:50:29,421 - INFO - ========================
+2025-04-19 12:50:29,423 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:50:29,428 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:50:29,428 - INFO - ========================
+2025-04-19 12:50:29,428 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:50:29,429 - INFO - ========================
+2025-04-19 12:50:29,432 - INFO - Columns in p7_products DataFrame: ['product_id', 'category', 'sub_category', 'product_name', ' cost ']
+2025-04-19 12:51:49,170 - INFO - ======================
+2025-04-19 12:51:49,170 - INFO - STARTING data_prep.py
+2025-04-19 12:51:49,170 - INFO - ======================
+2025-04-19 12:51:49,171 - INFO - ========================
+2025-04-19 12:51:49,171 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:51:49,171 - INFO - ========================
+2025-04-19 12:51:49,175 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:51:49,175 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:51:49,187 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:51:49,187 - INFO - ========================
+2025-04-19 12:51:49,188 - INFO - Starting PRODUCTS prep
+2025-04-19 12:51:49,188 - INFO - ========================
+2025-04-19 12:51:49,190 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:51:49,201 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:51:49,201 - INFO - ========================
+2025-04-19 12:51:49,201 - INFO - Starting SALES prep
+2025-04-19 12:51:49,202 - INFO - ========================
+2025-04-19 12:51:49,203 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:51:49,222 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:51:49,223 - INFO - ======================
+2025-04-19 12:51:49,223 - INFO - FINISHED data_prep.py
+2025-04-19 12:51:49,223 - INFO - ======================
+2025-04-19 12:51:49,223 - INFO - ========================
+2025-04-19 12:51:49,223 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:51:49,224 - INFO - ========================
+2025-04-19 12:51:49,225 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:51:49,233 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:51:49,233 - INFO - ========================
+2025-04-19 12:51:49,233 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:51:49,233 - INFO - ========================
+2025-04-19 12:51:49,239 - INFO - Columns in p7_products DataFrame: ['product_id', 'category', 'sub_category', 'name', 'cost ']
+2025-04-19 12:51:49,266 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_products_data_prepared.csv
+2025-04-19 12:51:49,267 - INFO - ========================
+2025-04-19 12:51:49,267 - INFO - Starting P7 SALES prep
+2025-04-19 12:51:49,267 - INFO - ========================
+2025-04-19 12:51:49,295 - INFO - Columns in p7_sales DataFrame: ['row_id', 'order_id', 'product_id', 'order_date', 'ship_mode', 'ship_date', 'customer_id', 'customer_name', 'segment', 'country', 'city', 'state', 'postal_code', 'region', 'quantity', 'discount', 'sales', 'profit']
+2025-04-19 12:52:33,192 - INFO - ======================
+2025-04-19 12:52:33,193 - INFO - STARTING data_prep.py
+2025-04-19 12:52:33,193 - INFO - ======================
+2025-04-19 12:52:33,193 - INFO - ========================
+2025-04-19 12:52:33,193 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:52:33,194 - INFO - ========================
+2025-04-19 12:52:33,196 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:52:33,196 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:52:33,207 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:52:33,208 - INFO - ========================
+2025-04-19 12:52:33,208 - INFO - Starting PRODUCTS prep
+2025-04-19 12:52:33,208 - INFO - ========================
+2025-04-19 12:52:33,210 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:52:33,221 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:52:33,222 - INFO - ========================
+2025-04-19 12:52:33,222 - INFO - Starting SALES prep
+2025-04-19 12:52:33,222 - INFO - ========================
+2025-04-19 12:52:33,224 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:52:33,243 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:52:33,244 - INFO - ======================
+2025-04-19 12:52:33,244 - INFO - FINISHED data_prep.py
+2025-04-19 12:52:33,244 - INFO - ======================
+2025-04-19 12:52:33,244 - INFO - ========================
+2025-04-19 12:52:33,245 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:52:33,245 - INFO - ========================
+2025-04-19 12:52:33,246 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:52:33,253 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:52:33,253 - INFO - ========================
+2025-04-19 12:52:33,253 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:52:33,253 - INFO - ========================
+2025-04-19 12:52:33,258 - INFO - Columns in p7_products DataFrame: ['product_id', 'category', 'sub_category', 'name', 'cost ']
+2025-04-19 12:52:33,276 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_products_data_prepared.csv
+2025-04-19 12:52:33,276 - INFO - ========================
+2025-04-19 12:52:33,277 - INFO - Starting P7 SALES prep
+2025-04-19 12:52:33,277 - INFO - ========================
+2025-04-19 12:52:33,307 - INFO - Columns in p7_sales DataFrame: ['row_id', 'order_id', 'product_id', 'sale_date', 'ship_mode', 'ship_date', 'customer_id', 'customer_name', 'segment', 'country', 'city', 'state', 'postal_code', 'region', 'quantity', 'discount', 'sales', 'profit']
+2025-04-19 12:53:03,198 - INFO - ======================
+2025-04-19 12:53:03,198 - INFO - STARTING data_prep.py
+2025-04-19 12:53:03,199 - INFO - ======================
+2025-04-19 12:53:03,199 - INFO - ========================
+2025-04-19 12:53:03,199 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:53:03,199 - INFO - ========================
+2025-04-19 12:53:03,202 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:53:03,202 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:53:03,214 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:53:03,214 - INFO - ========================
+2025-04-19 12:53:03,215 - INFO - Starting PRODUCTS prep
+2025-04-19 12:53:03,215 - INFO - ========================
+2025-04-19 12:53:03,217 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:53:03,232 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:53:03,232 - INFO - ========================
+2025-04-19 12:53:03,232 - INFO - Starting SALES prep
+2025-04-19 12:53:03,232 - INFO - ========================
+2025-04-19 12:53:03,234 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:53:03,255 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:53:03,256 - INFO - ======================
+2025-04-19 12:53:03,256 - INFO - FINISHED data_prep.py
+2025-04-19 12:53:03,256 - INFO - ======================
+2025-04-19 12:53:03,256 - INFO - ========================
+2025-04-19 12:53:03,257 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:53:03,257 - INFO - ========================
+2025-04-19 12:53:03,258 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:53:03,266 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:53:03,266 - INFO - ========================
+2025-04-19 12:53:03,266 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:53:03,266 - INFO - ========================
+2025-04-19 12:53:03,272 - INFO - Columns in p7_products DataFrame: ['product_id', 'category', 'sub_category', 'name', 'cost ']
+2025-04-19 12:53:03,290 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_products_data_prepared.csv
+2025-04-19 12:53:03,290 - INFO - ========================
+2025-04-19 12:53:03,291 - INFO - Starting P7 SALES prep
+2025-04-19 12:53:03,291 - INFO - ========================
+2025-04-19 12:53:03,324 - INFO - Columns in p7_sales DataFrame: ['row_id', 'sale_id', 'product_id', 'sale_date', 'ship_mode', 'ship_date', 'customer_id', 'customer_name', 'segment', 'country', 'city', 'state', 'postal_code', 'region', 'quantity', 'discount', 'sales', 'profit']
+2025-04-19 12:53:03,420 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_sales_data_prepared.csv
+2025-04-19 12:53:03,420 - INFO - ======================
+2025-04-19 12:53:03,421 - INFO - FINISHED P7 data prep
+2025-04-19 12:53:03,421 - INFO - ======================
+2025-04-19 12:57:46,384 - INFO - ======================
+2025-04-19 12:57:46,384 - INFO - STARTING data_prep.py
+2025-04-19 12:57:46,385 - INFO - ======================
+2025-04-19 12:57:46,385 - INFO - ========================
+2025-04-19 12:57:46,385 - INFO - Starting CUSTOMERS prep
+2025-04-19 12:57:46,385 - INFO - ========================
+2025-04-19 12:57:46,387 - INFO - Columns in customers DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:57:46,388 - INFO - Columns in DataFrame: ['customer_id', 'name', 'region', 'join_date', 'loyalty_points', 'preferred_contact_method']
+2025-04-19 12:57:46,402 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\customers_data_prepared.csv
+2025-04-19 12:57:46,402 - INFO - ========================
+2025-04-19 12:57:46,403 - INFO - Starting PRODUCTS prep
+2025-04-19 12:57:46,403 - INFO - ========================
+2025-04-19 12:57:46,404 - INFO - Columns in DataFrame: ['product_id', 'name', 'category', 'unit_price_usd', 'year_added']
+2025-04-19 12:57:46,413 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\products_data_prepared.csv
+2025-04-19 12:57:46,413 - INFO - ========================
+2025-04-19 12:57:46,414 - INFO - Starting SALES prep
+2025-04-19 12:57:46,414 - INFO - ========================
+2025-04-19 12:57:46,415 - INFO - Columns in DataFrame: ['sale_id', 'customer_id', 'product_id', 'store_id', 'campaign_id', 'sale_date', 'quantity', 'sale_amount_usd', 'discount_amount_usd', 'payment_method']
+2025-04-19 12:57:46,433 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\sales_data_prepared.csv
+2025-04-19 12:57:46,433 - INFO - ======================
+2025-04-19 12:57:46,434 - INFO - FINISHED data_prep.py
+2025-04-19 12:57:46,434 - INFO - ======================
+2025-04-19 12:57:46,434 - INFO - ========================
+2025-04-19 12:57:46,435 - INFO - Starting P7 SALESREPS prep
+2025-04-19 12:57:46,435 - INFO - ========================
+2025-04-19 12:57:46,436 - INFO - Columns in p7_salesreps DataFrame: ['region', 'sales_rep']
+2025-04-19 12:57:46,442 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_salesreps_data_prepared.csv
+2025-04-19 12:57:46,442 - INFO - ========================
+2025-04-19 12:57:46,443 - INFO - Starting P7 PRODUCTS prep
+2025-04-19 12:57:46,443 - INFO - ========================
+2025-04-19 12:57:46,447 - INFO - Columns in p7_products DataFrame: ['product_id', 'category', 'sub_category', 'name', 'cost ']
+2025-04-19 12:57:46,463 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_products_data_prepared.csv
+2025-04-19 12:57:46,463 - INFO - ========================
+2025-04-19 12:57:46,463 - INFO - Starting P7 SALES prep
+2025-04-19 12:57:46,464 - INFO - ========================
+2025-04-19 12:57:46,488 - INFO - Columns in p7_sales DataFrame: ['row_id', 'sale_id', 'product_id', 'sale_date', 'ship_mode', 'ship_date', 'customer_id', 'customer_name', 'segment', 'country', 'city', 'state', 'postal_code', 'region', 'quantity', 'discount', 'sales', 'profit']
+2025-04-19 12:57:46,582 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_sales_data_prepared.csv
+2025-04-19 12:57:46,582 - INFO - ========================
+2025-04-19 12:57:46,582 - INFO - Starting P7 RETURNS prep
+2025-04-19 12:57:46,583 - INFO - ========================
+2025-04-19 12:57:46,584 - INFO - Columns in p7_returns DataFrame: ['order_id', 'returned']
+2025-04-19 12:57:46,591 - INFO - Data saved to C:\Projects\smart-store-branton\data\prepared\p7_returns_data_prepared.csv
+2025-04-19 12:57:46,591 - INFO - ======================
+2025-04-19 12:57:46,591 - INFO - FINISHED P7 RETURNS prep
+2025-04-19 12:57:46,591 - INFO - ======================
+2025-04-19 12:57:46,592 - INFO - ======================
+2025-04-19 12:57:46,592 - INFO - FINISHED P7 data prep
+2025-04-19 12:57:46,592 - INFO - ======================
+2025-04-20 16:29:19,681 - INFO - Starting data warehouse creation...
+2025-04-20 16:29:19,682 - ERROR - Error creating p7_sales table: unknown column "order_id" in foreign key definition
+2025-04-20 16:29:19,682 - ERROR - Error creating p7_returns table: near "NOT": syntax error
+2025-04-20 16:29:19,697 - INFO - p7_salesreps table created.
+2025-04-20 16:29:19,698 - INFO - Data warehouse created successfully.
+2025-04-20 16:29:19,698 - INFO - Data warehouse creation complete.
+2025-04-20 16:59:50,534 - INFO - Existing database data\dw\store_returns.db deleted.
+2025-04-20 16:59:50,534 - INFO - Starting data warehouse creation...
+2025-04-20 16:59:50,547 - INFO - p7_product table created.
+2025-04-20 16:59:50,547 - ERROR - Error creating p7_sales table: unknown column "order_id" in foreign key definition
+2025-04-20 16:59:50,548 - ERROR - Error creating p7_returns table: near "NOT": syntax error
+2025-04-20 16:59:50,551 - INFO - p7_salesreps table created.
+2025-04-20 16:59:50,552 - INFO - Data warehouse created successfully.
+2025-04-20 16:59:50,552 - INFO - Data warehouse creation complete.
+2025-04-20 17:30:40,897 - INFO - Existing database data\dw\store_returns.db deleted.
+2025-04-20 17:30:40,897 - INFO - Starting data warehouse creation...
+2025-04-20 17:30:40,901 - INFO - p7_product table created.
+2025-04-20 17:30:40,904 - INFO - p7_sales table created.
+2025-04-20 17:30:40,907 - INFO - p7_returns table created.
+2025-04-20 17:30:40,910 - INFO - p7_salesreps table created.
+2025-04-20 17:30:40,910 - INFO - All tables created successfully.
+2025-04-20 17:30:40,911 - INFO - Data warehouse creation complete.
+2025-04-20 17:43:14,512 - INFO - p7_products table created.
+2025-04-20 17:43:14,513 - ERROR - Error loading data into the database: name 'create_p7_sales_table' is not defined
+2025-04-20 17:46:49,874 - INFO - p7_products table created.
+2025-04-20 17:46:49,887 - INFO - p7_sales table created.
+2025-04-20 17:46:49,887 - ERROR - Error loading data into the database: name 'create_p7_returns_table' is not defined
+2025-04-20 17:47:39,950 - INFO - p7_products table created.
+2025-04-20 17:47:39,950 - INFO - p7_sales table created.
+2025-04-20 17:47:39,963 - INFO - p7_returns table created.
+2025-04-20 17:47:39,963 - ERROR - Error loading data into the database: name 'create_p7_salesreps_table' is not defined
+2025-04-20 17:48:28,053 - INFO - p7_products table created.
+2025-04-20 17:48:28,053 - INFO - p7_sales table created.
+2025-04-20 17:48:28,053 - INFO - p7_returns table created.
+2025-04-20 17:48:28,066 - INFO - p7_salesreps table created.
+2025-04-20 17:48:28,066 - ERROR - Error loading data into the database: no such table: returns
+2025-04-20 17:53:28,852 - INFO - p7_products table created.
+2025-04-20 17:53:28,852 - INFO - p7_sales table created.
+2025-04-20 17:53:28,853 - INFO - p7_returns table created.
+2025-04-20 17:53:28,853 - INFO - p7_salesreps table created.
+2025-04-20 17:53:28,863 - INFO - Existing records deleted from all tables.
+2025-04-20 17:53:28,902 - INFO - Data inserted into p7_returns table.
+2025-04-20 17:53:28,902 - ERROR - Error loading data into the database: name 'insert_products' is not defined
+2025-04-20 17:54:26,884 - INFO - p7_products table created.
+2025-04-20 17:54:26,885 - INFO - p7_sales table created.
+2025-04-20 17:54:26,885 - INFO - p7_returns table created.
+2025-04-20 17:54:26,885 - INFO - p7_salesreps table created.
+2025-04-20 17:54:26,896 - INFO - Existing records deleted from all tables.
+2025-04-20 17:54:26,934 - INFO - Data inserted into p7_returns table.
+2025-04-20 17:54:26,941 - INFO - Data inserted into p7_products table.
+2025-04-20 17:54:26,941 - ERROR - Error loading data into the database: name 'insert_sales' is not defined
+2025-04-20 17:55:21,542 - INFO - p7_products table created.
+2025-04-20 17:55:21,543 - INFO - p7_sales table created.
+2025-04-20 17:55:21,543 - INFO - p7_returns table created.
+2025-04-20 17:55:21,544 - INFO - p7_salesreps table created.
+2025-04-20 17:55:21,555 - INFO - Existing records deleted from all tables.
+2025-04-20 17:55:21,593 - INFO - Data inserted into p7_returns table.
+2025-04-20 17:55:21,601 - INFO - Data inserted into p7_products table.
+2025-04-20 17:55:21,601 - ERROR - Error loading data into the database: name 'insert_sales' is not defined
+2025-04-20 17:56:16,617 - INFO - p7_products table created.
+2025-04-20 17:56:16,618 - INFO - p7_sales table created.
+2025-04-20 17:56:16,618 - INFO - p7_returns table created.
+2025-04-20 17:56:16,619 - INFO - p7_salesreps table created.
+2025-04-20 17:56:16,630 - INFO - Existing records deleted from all tables.
+2025-04-20 17:56:16,670 - INFO - Data inserted into p7_returns table.
+2025-04-20 17:56:16,676 - INFO - Data inserted into p7_products table.
+2025-04-20 17:56:16,712 - INFO - Data inserted into p7_sales table.
+2025-04-20 17:56:16,712 - ERROR - Error loading data into the database: name 'insert_salesreps' is not defined
+2025-04-20 17:57:20,677 - INFO - p7_products table created.
+2025-04-20 17:57:20,677 - INFO - p7_sales table created.
+2025-04-20 17:57:20,678 - INFO - p7_returns table created.
+2025-04-20 17:57:20,678 - INFO - p7_salesreps table created.
+2025-04-20 17:57:20,690 - INFO - Existing records deleted from all tables.
+2025-04-20 17:57:20,729 - INFO - Data inserted into p7_returns table.
+2025-04-20 17:57:20,737 - INFO - Data inserted into p7_products table.
+2025-04-20 17:57:20,771 - INFO - Data inserted into p7_sales table.
+2025-04-20 17:57:20,771 - ERROR - Error inserting data into p7_salesreps table: table p7_salesreps has no column named sales_rep
+2025-04-20 17:57:20,772 - INFO - Data loaded into the database successfully.
+2025-04-20 18:01:34,274 - INFO - p7_products table created.
+2025-04-20 18:01:34,274 - INFO - p7_sales table created.
+2025-04-20 18:01:34,274 - INFO - p7_returns table created.
+2025-04-20 18:01:34,275 - INFO - p7_salesreps table created.
+2025-04-20 18:01:34,288 - INFO - Existing records deleted from all tables.
+2025-04-20 18:01:34,330 - INFO - Data inserted into p7_returns table.
+2025-04-20 18:01:34,339 - INFO - Data inserted into p7_products table.
+2025-04-20 18:01:34,374 - INFO - Data inserted into p7_sales table.
+2025-04-20 18:01:34,375 - ERROR - Error inserting data into p7_salesreps table: table p7_salesreps has no column named sales_rep
+2025-04-20 18:01:34,375 - INFO - Data loaded into the database successfully.
+2025-04-20 18:02:00,190 - INFO - p7_products table created.
+2025-04-20 18:02:00,191 - INFO - p7_sales table created.
+2025-04-20 18:02:00,191 - INFO - p7_returns table created.
+2025-04-20 18:02:00,191 - INFO - p7_salesreps table created.
+2025-04-20 18:02:00,205 - INFO - Existing records deleted from all tables.
+2025-04-20 18:02:00,245 - INFO - Data inserted into p7_returns table.
+2025-04-20 18:02:00,254 - INFO - Data inserted into p7_products table.
+2025-04-20 18:02:00,290 - INFO - Data inserted into p7_sales table.
+2025-04-20 18:02:00,291 - ERROR - Error inserting data into p7_salesreps table: table p7_salesreps has no column named sales_rep
+2025-04-20 18:02:00,291 - INFO - Data loaded into the database successfully.
+2025-04-20 18:04:15,826 - INFO - p7_products table created.
+2025-04-20 18:04:15,827 - INFO - p7_sales table created.
+2025-04-20 18:04:15,827 - INFO - p7_returns table created.
+2025-04-20 18:04:15,827 - INFO - p7_salesreps table created.
+2025-04-20 18:04:15,840 - INFO - Existing records deleted from all tables.
+2025-04-20 18:04:15,882 - INFO - Data inserted into p7_returns table.
+2025-04-20 18:04:15,890 - INFO - Data inserted into p7_products table.
+2025-04-20 18:04:15,926 - INFO - Data inserted into p7_sales table.
+2025-04-20 18:04:15,927 - ERROR - Error inserting data into p7_salesreps table: table p7_salesreps has no column named sales_rep
+2025-04-20 18:04:15,927 - INFO - Data loaded into the database successfully.
+2025-04-20 18:04:48,522 - INFO - p7_products table created.
+2025-04-20 18:04:48,522 - INFO - p7_sales table created.
+2025-04-20 18:04:48,523 - INFO - p7_returns table created.
+2025-04-20 18:04:48,523 - INFO - p7_salesreps table created.
+2025-04-20 18:04:48,539 - INFO - Existing records deleted from all tables.
+2025-04-20 18:04:48,577 - INFO - Data inserted into p7_returns table.
+2025-04-20 18:04:48,585 - INFO - Data inserted into p7_products table.
+2025-04-20 18:04:48,621 - INFO - Data inserted into p7_sales table.
+2025-04-20 18:04:48,622 - ERROR - Error inserting data into p7_salesreps table: table p7_salesreps has no column named sales_rep
+2025-04-20 18:04:48,622 - INFO - Data loaded into the database successfully.
+2025-04-20 18:06:07,797 - INFO - p7_products table created.
+2025-04-20 18:06:07,797 - INFO - p7_sales table created.
+2025-04-20 18:06:07,798 - INFO - p7_returns table created.
+2025-04-20 18:06:07,798 - INFO - p7_salesreps table created.
+2025-04-20 18:06:07,811 - INFO - Existing records deleted from all tables.
+2025-04-20 18:06:07,850 - INFO - Data inserted into p7_returns table.
+2025-04-20 18:06:07,861 - INFO - Data inserted into p7_products table.
+2025-04-20 18:06:07,900 - INFO - Data inserted into p7_sales table.
+2025-04-20 18:06:07,904 - INFO - Data inserted into p7_salesreps table.
+2025-04-20 18:06:07,904 - INFO - Data loaded into the database successfully.
+2025-04-20 18:07:47,617 - INFO - Starting data warehouse creation...
+2025-04-20 18:07:47,622 - INFO - p7_product table created.
+2025-04-20 18:07:47,626 - INFO - p7_sales table created.
+2025-04-20 18:07:47,628 - INFO - p7_returns table created.
+2025-04-20 18:07:47,632 - INFO - p7_salesreps table created.
+2025-04-20 18:07:47,632 - INFO - All tables created successfully.
+2025-04-20 18:07:47,633 - INFO - Data warehouse creation complete.
+2025-04-20 18:08:39,812 - INFO - p7_products table created.
+2025-04-20 18:08:39,813 - INFO - p7_sales table created.
+2025-04-20 18:08:39,813 - INFO - p7_returns table created.
+2025-04-20 18:08:39,813 - INFO - p7_salesreps table created.
+2025-04-20 18:08:39,825 - INFO - Existing records deleted from all tables.
+2025-04-20 18:08:39,871 - INFO - Data inserted into p7_returns table.
+2025-04-20 18:08:39,878 - INFO - Data inserted into p7_products table.
+2025-04-20 18:08:39,919 - INFO - Data inserted into p7_sales table.
+2025-04-20 18:08:39,923 - INFO - Data inserted into p7_salesreps table.
+2025-04-20 18:08:39,923 - INFO - Data loaded into the database successfully.
+2025-04-20 18:09:49,197 - INFO - Starting data warehouse creation...
+2025-04-20 18:09:49,212 - INFO - customer table created.
+2025-04-20 18:09:49,216 - INFO - product table created.
+2025-04-20 18:09:49,219 - INFO - sale table created.
+2025-04-20 18:09:49,219 - INFO - Data warehouse created successfully.
+2025-04-20 18:09:49,219 - INFO - Data warehouse creation complete.
